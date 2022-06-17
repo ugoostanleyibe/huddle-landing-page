@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://kit.fontawesome.com/0f7f426e3a.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Huddle Landing Page</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-pink': 'hsl(322, 100%, 66%)',
+            'greyish-blue': 'hsl(208, 11%, 55%)',
+            'pale-cyan': 'hsl(193, 100%, 96%)',
+            'dark-cyan': 'hsl(192, 100%, 9%)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header class="absolute flex inset-0 items-center justify-between w-screen h-fit px-6 xl:px-[78px] py-8 xl:py-12">
+    <img src="images/logo.svg" class="w-[120px] xl:w-[180px]" alt="Huddle Logo">
+    <button class="hover:opacity-[.72] bg-white rounded-full shadow-[0_2px_16px_-2px_rgba(0,0,0,0.128)] text-center text-dark-cyan text-sm w-32 xl:w-48 py-2 xl:py-3">
+      <strong>Try It Free</strong>
+    </button>
+  </header>
+  <main>
+    <section class="flex flex-col xl:flex-row items-center bg-[url('images/bg-hero-mobile.svg')] xl:bg-[url('images/bg-hero-desktop.svg')] bg-cover bg-pale-cyan w-screen px-[36px] xl:px-[78px] pt-24 xl:pt-[152px] pb-12 xl:pb-16">
+      <article class="text-center xl:text-start pt-24 pb-16 xl:pb-0 xl:pr-10">
+        <h1 class="font-semibold text-dark-cyan text-poppins text-3xl xl:text-4xl xl:leading-relaxed">
+          Build The Community <br> Your Fans Will Love
+        </h1>
+        <p class="text-dark-cyan mt-5">
+          Huddle re-imagines the way we build communities. You have a voice,
+          but so does your audience. Create connections with your users
+          as you engage in genuine discussion.
+        </p>
+        <button class="hover:opacity-[.72] bg-primary-pink rounded-full shadow-[0_2px_16px_-2px_rgba(0,0,0,0.128)] text-center text-white text-sm w-[280px] py-4 mt-8">
+          <strong>Get Started For Free</strong>
+        </button>
+      </article>
+      <img src="images/illustration-mockups.svg" class="w-[656px]" alt="Mockups Illustration">
+    </section>
+    <section class="flex flex-col bg-white w-screen px-20 py-28">
+    </section>
+  </main>
+  <footer class="flex flex-col xl:flex-row bg-dark-cyan w-screen p-20 pt-40">
+  </footer>
+</body>
+
+</html>
