@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    animation: fadeIn 1.28s ease-in-out;
     font-size: 18px;
 }
 
@@ -12,4 +13,13 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
